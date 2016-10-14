@@ -1,0 +1,14 @@
+h1 {
+    font-size: 3rem;
+}
+
+label {
+    display: block;
+}
+
+input {
+    border: 1px solid #333;
+    border-radius: 7px;
+    height: 35px;
+    width: 200px;
+}
