@@ -12,3 +12,7 @@ input {
     height: 35px;
     width: 200px;
 }
+
+#full-name {
+    text-transform: uppercase;
+}
