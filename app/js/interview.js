@@ -6,7 +6,7 @@ function getArrayItem (arrayList) {
 
 }
 
-var question2 = document.getElementsByTagName( 'h1' );
+var question2 = document.getElementsByTagName( 'a' );
 
 for ( var i = 0; i < question2.length; i++ ) {
     (function( lockedInIndex ){
