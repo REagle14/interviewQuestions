@@ -6,3 +6,14 @@ function getArrayItem (arrayList) {
 
 }
 
+var question2 = document.getElementsByTagName( 'h1' );
+
+for ( var i = 0; i < question2.length; i++ ) {
+    (function( lockedInIndex ){
+        question2[ i ].addEventListener( 'click', function(e){
+            e.preventDefault();
+            alert( 'I have solved ' + lockedInIndex );
+        }, 'false' );
+    })( i );
+}
+
