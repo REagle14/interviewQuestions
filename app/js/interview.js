@@ -6,14 +6,15 @@ function getArrayItem (arrayList) {
 
 }
 
-var question2 = document.getElementsByTagName( 'a' );
+var elems = document.getElementsByTagName( 'a' );
 
-for ( var i = 0; i < question2.length; i++ ) {
-    (function( lockedInIndex ){
-        question2[ i ].addEventListener( 'click', function(e){
+for ( var i = 0; i < elems.length; i++ ) {
+    elems[ i ].addEventListener( 'click', (function( lockedInIndex ){
+        return function(e){
             e.preventDefault();
-            alert( 'I have solved ' + lockedInIndex );
-        }, 'false' );
-    })( i );
+            alert( 'I am link #' + lockedInIndex );
+        };
+    })( i ), 'false' );
 }
+
 
