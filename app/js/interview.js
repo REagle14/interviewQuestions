@@ -17,3 +17,6 @@ for ( var i = 0; i < question2.length; i++ ) {
     })( i );
 }
 
+function getPalindrome (str) {
+    return str.split('').reverse().join('').trim();
+}
